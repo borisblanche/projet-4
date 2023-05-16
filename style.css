@@ -1,4 +1,11 @@
-
+body{
+    font-family: roboto;
+    margin: 0%;
+}
+ i.like{
+    color:violet
+   
+}
 a{
     text-decoration-line: none;
 }
@@ -8,9 +15,13 @@ header{
     align-items: center;
     height: 63px;
 }
-body{
-        margin: 0%;
+#logo{
+    
+    width: 162px;
+    height: 44px;
+    justify-items: center;
 }
+
 .location{
     display: flex;
     justify-content: center;
@@ -18,21 +29,49 @@ body{
     text-align: center;
     background-color: #EAEAEA;
     height: 50px;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 16px;
+    color: #353535;
+}
+.location i{
+    margin-right: 20px;
 }
 .reserve{
    padding-top: 20px;
-    width: 275px;
-    
-    margin-left: 42px;
-    margin-right: 58px;
-    text-align: center;
+    padding-bottom: 45px;
     display: flex;
+    
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #f6f6f6; 
+   
 }
 h1{
+    font-family: Roboto;
+    font-style: bold;
+
     font-size: 24px;
     font-weight: 700px;
+   line-height: 28px;
+   
+   text-align: center;
+   margin-bottom: 0px;
+   
+
+}
+
+.reserve p{
+    
+font-family: Roboto;
+Font-style: Light;
+Font-size: 18px;
+Line-height: 21px;
+
+text-align: center;
+
+    
     
 }
 .btn-explore{
@@ -41,47 +80,138 @@ h1{
     display: flex;
     align-items: center;
     justify-content:center;
-    margin-left: 34px;
     border-radius: 25px;
     color: #fff;
-    background: linear-gradient(  #FF79DA,#9356DC  );
+font-size: 16px;
+font-weight: 500px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow:0px 4px  rgba(0, 0, 0, 0.25);
+}
+.fonction{
+    padding-top: 20px;
+}
+h2{
+    padding-left: 20px;
+    font-family: roboto;
+    font-size: 24px;
+    font-weight: 700px;
+    color: #353535;
+}
+ul{
+   
+   padding: 20px;
+}
+li{
+    list-style-type:none
+}
+.number
+{color: #EAEAEA;
+    background-color: #9356DC;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -10px;
+    
 }
 
-li{
-    list-style-type:decimal;
-}
+
 
 .btn {
     display: block;
-    flex-direction: column;
-    background-color: #f7f7f7;
+    flex-direction: row;
+    background-color: #f6f6f6;
     border-radius: 20px;
     padding-top: 28.59px;
     padding-bottom: 28.12px;
-    text-align: center;
+    
     margin-bottom: 20px;
+    box-shadow: 0px 4px  rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 500px;
+    color: #000000;
 }
-.btn a{
+.fonction a{
     color: black;
     
 }
-
-
-#logo{
-    
-    width: 162px;
-    height: 44px;
-    justify-items: center;
+.btn i{
+   
+    color: #9356DC;
+    margin-left: 35px;
+    margin-right: 35px;
 }
+.restaurant{
+    background-color:#EAEAEA;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 70px;
+
+}
+.card{
+    margin-left: 14px;
+    margin-right: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    border-radius: 15px;
+    background-color: #fff;
+}
+.card img{
+    object-fit:cover;
+    justify-content: center;
+    border-radius: 15px 15px 0px 0px;
+    width: 346px;
+    height: 180px;
+   
+}
+.card-content{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.card-txt{
+    display: flex;
+    flex-direction: column;
+    line-height:0px;
+    padding-left: 10px;
+}
+
+
+.card-rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 footer{
     background-color: #353535;
     color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 10px;
 }
-.logo-footer{
-    width:137.53px;
-    height:27px ;
+h4{
+    font-family: shrikhand;
+    font-style: italic;
+    font-size:18px;
+    font-weight: 400;
+
+
 }
-img{
-    width: 346px;
-    height: 231px;
+ .mentions i{
+    padding-right: 10px;
 }
+
