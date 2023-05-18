@@ -214,4 +214,158 @@ h4{
  .mentions i{
     padding-right: 10px;
 }
+@media screen and (min-width: 768px)
+{
+    .fonction {
+        padding-left: 180px;
+    padding-right: 180px;}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    gap: 20px;
+    
+   
+ }
+ .btn{
+    display: block;
+    width: 300px;
+    height: 20px;
+ }
+ .restaurant{
+    padding-left: 180px;
+padding-right: 180px;
+ }
+ .restaurants-card{
+    justify-items: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+   
+    
+    
+ }
+ .card{
+    width: 490px;
+    height: 251px;
+    
+    
 
+ }
+ .card img{
+    width: 490px;
+ }
+ footer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+ }
+
+
+
+
+}
+      
+
+
+
+     /* Menu*/
+.logo-return{
+    position: absolute;
+    left: 23px;
+    top: 25px;
+}
+.logo-return i{
+    color:black;
+}
+.photo{
+        width: 375px;
+        height: 275px;
+        object-fit: cover;
+ }
+#menu{
+    background-color:#f6f6f6;
+    border-radius: 25px;
+}
+.restaurant-name{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    
+padding-right: 20px;
+padding-left: 20px;
+font-family: shrikhand;
+font-weight: 400;
+font-size: 28px;
+line-height: 41px;
+}
+hr{
+    border: 2px solid  #99e2d0 ;
+    width: 40px;
+    margin-left: 20px;
+    margin-top: -10px;
+    
+}
+.btn-menu{
+    background-color: #fff;
+    margin: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    border-radius: 15px;
+}
+.menu h2{
+    
+    margin-top: 30px;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 300;
+   
+}
+.btn-menu h3{
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 10px;
+
+}
+.btn-menu p{
+    display: flex;
+    justify-content: space-between;
+font-size: 14px;
+font-family: roboto;
+font-weight: 300;
+line-height: 2px;
+}
+.btn-menu span{
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 2px;
+ 
+
+}
+.commande{
+    display: flex;
+    justify-content: center;
+}
+.btn-commande{
+    display: block;
+    text-align: center;
+    width: 186px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    background:linear-gradient(#FF79DA,#9356DC);
+    color:#fff;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 500;
+
+
+}
