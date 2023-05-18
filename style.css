@@ -41,38 +41,26 @@ header{
    padding-top: 20px;
     padding-bottom: 45px;
     display: flex;
-    
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color:  #f6f6f6; 
-   
 }
 h1{
     font-family: Roboto;
     font-style: bold;
-
     font-size: 24px;
     font-weight: 700px;
    line-height: 28px;
-   
    text-align: center;
    margin-bottom: 0px;
-   
-
 }
-
 .reserve p{
-    
 font-family: Roboto;
 Font-style: Light;
 Font-size: 18px;
 Line-height: 21px;
-
 text-align: center;
-
-    
-    
 }
 .btn-explore{
     width: 218px;
@@ -169,8 +157,8 @@ li{
     object-fit:cover;
     justify-content: center;
     border-radius: 15px 15px 0px 0px;
-    width: 346px;
-    height: 180px;
+    width: 100%;
+    max-height: 180px;
    
 }
 .card-content{
@@ -192,9 +180,6 @@ li{
     align-items: center;
 }
 
-
-
-
 footer{
     background-color: #353535;
     color: white;
@@ -214,58 +199,127 @@ h4{
  .mentions i{
     padding-right: 10px;
 }
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px){
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn{
+        
+        display: block;
+        width: 300px;
+        height: 20px;
+
+    }
+    
+    
+    .restaurants-card{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+
+    }
+    
+    
+    .card img{
+        width: 100%;
+        
+    }
+    .mentions{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    }
+    .mention-1{order: 1;}
+    .mention-2{order:5 ;}
+    .mention-3{order:4 ;}
+    .mention-4{order:3 ;}
+    .mention-5{order: 2;}
+
+}
+    
+
+@media screen and (min-width: 1024px)
 {
-    .fonction {
+    .fonction{
         padding-left: 180px;
-    padding-right: 180px;}
+        padding-right: 180px;
+    }
+    .restaurant{
+        padding-left: 180px;
+        padding-right: 180px;
+       
+    }
+    
+ nav{
+    
+    
+    display: flex;
+    justify-content: center;
+    
+ } 
 ul{
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
-    gap: 20px;
+    
+    gap:50px
+    
     
    
  }
  .btn{
     display: block;
-    width: 300px;
-    height: 20px;
+    width: 310px;
+    height: 25px;
  }
- .restaurant{
-    padding-left: 180px;
-padding-right: 180px;
- }
+ 
  .restaurants-card{
-    justify-items: center;
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    
+    
+
+     justify-items:center;
     display:grid;
     grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr; 
+    row-gap: 30px;
+    
    
-    
-    
  }
  .card{
-    width: 490px;
+    min-width: 490px;
     height: 251px;
     
     
 
  }
  .card img{
-    width: 490px;
+    width:100%
  }
- footer{
+ .mentions{
+   
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
     padding-right: 20px;
     padding-top: 20px;
  }
 
+}
 
-
-
+@media screen and (min-width:1440px){
+    
+       
+    
+    
 }
       
 
@@ -288,6 +342,9 @@ padding-right: 180px;
 #menu{
     background-color:#f6f6f6;
     border-radius: 25px;
+    position: relative;
+    top:-50px
+
 }
 .restaurant-name{
     display: flex;
@@ -368,4 +425,25 @@ line-height: 2px;
     font-weight: 500;
 
 
+}
+@media screen and (min-width:375px){
+   .photo{
+    width: 100%;
+   } 
+}
+@media screen and (min-width:768px){
+    #menu{
+        margin-left: 90px;
+        margin-right: 90px;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+@media screen and (min-width:1440px){
+    #menu{
+        margin-left: 193px;
+        margin-right: 192px;
+        padding-left: 225px;
+        padding-right: 225px;
+    } 
 }
