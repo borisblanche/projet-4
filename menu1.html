@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="logo-return">
-        <a href="#index.html"><i class="fa-solid fa-arrow-left"></i></a><div id="btn-return"></div>
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a><div id="btn-return"></div>
     </div>
         <img id="logo" src=".//ohmyfood.png">
 </header>
@@ -22,8 +22,12 @@
     <img class="photo photo1" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
 </section>
 <main id="menu">
-    <h1 class="restaurant-name">La palette du goût<i class="fa-regular fa-heart"></i></h1>
-<section id="entrees"class="menu">
+    <div class="restaurant-name">
+    <h1>La palette du goût
+        <i class="fa-regular fa-heart non-valid"></i><i class="fa-solid fa-heart valid"></i>
+    </h1>
+</div>
+    <section id="entrees"class="menu">
     <h2>ENTREES</h2>
     <hr>
     <div class="btn-menu">
@@ -80,7 +84,7 @@
     </div>
 </section>
 <section class="commande">
-    <div class="btn-commande">
+    <div class="btn-commande btns">
         <p>Commander</p>
     </div>
 </section>

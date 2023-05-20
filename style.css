@@ -1,13 +1,35 @@
+.btns:hover{
+    cursor: pointer ;
+    opacity: 80%;
+    box-shadow:0px 4px 10px 0px rgba(0, 0, 0,30) ;
+
+}
 body{
     font-family: roboto;
     margin: 0%;
 }
- i.like{
-    color:violet
-   
+
+.fa-heart{
+   position: absolute;
 }
+.valid {
+    background: linear-gradient(#9356DC,#FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition:all 3s;
+   opacity: 0%;
+}
+.valid:hover{
+    opacity: 100%;
+}
+
 a{
     text-decoration-line: none;
+    color: black;
+}
+footer a{
+    color: white;
 }
 header{
     display: flex;
@@ -16,7 +38,6 @@ header{
     height: 63px;
 }
 #logo{
-    
     width: 162px;
     height: 44px;
     justify-items: center;
@@ -73,7 +94,7 @@ text-align: center;
 font-size: 16px;
 font-weight: 500px;
     background: linear-gradient(#FF79DA, #9356DC);
-    box-shadow:0px 4px  rgba(0, 0, 0, 0.25);
+    box-shadow:0px 4px 10px 0px rgba(0, 0, 0, 0.25) ;
 }
 .fonction{
     padding-top: 20px;
@@ -92,8 +113,9 @@ ul{
 li{
     list-style-type:none
 }
-.number
-{color: #EAEAEA;
+.number{
+    position: absolute;
+    color: #EAEAEA;
     background-color: #9356DC;
     display: flex;
     width: 30px;
@@ -101,14 +123,9 @@ li{
     border-radius: 25px;
     justify-content: center;
     align-items: center;
-    position: absolute;
     margin-top: 25px;
     margin-left: -10px;
-    
 }
-
-
-
 .btn {
     display: block;
     flex-direction: row;
@@ -116,21 +133,18 @@ li{
     border-radius: 20px;
     padding-top: 28.59px;
     padding-bottom: 28.12px;
-    
     margin-bottom: 20px;
-    box-shadow: 0px 4px  rgba(0, 0, 0, 0.15);
+    box-shadow:0px 4px 10px 0px rgba(0, 0, 0, 0.25) ;
     font-size: 16px;
     font-weight: 500px;
-    color: #000000;
+    color:black
 }
 .fonction a{
     color: black;
-    
 }
 .btn i{
-   
-    color: #9356DC;
-    margin-left: 35px;
+    color: #7e7e7e;
+    margin-left: 45px;
     margin-right: 35px;
 }
 .restaurant{
@@ -139,7 +153,6 @@ li{
     flex-direction: column;
     margin: auto;
     padding-bottom: 70px;
-
 }
 .card{
     margin-left: 14px;
@@ -148,8 +161,6 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
     border-radius: 15px;
     background-color: #fff;
 }
@@ -159,7 +170,6 @@ li{
     border-radius: 15px 15px 0px 0px;
     width: 100%;
     max-height: 180px;
-   
 }
 .card-content{
     display: grid;
@@ -171,15 +181,12 @@ li{
     line-height:0px;
     padding-left: 10px;
 }
-
-
 .card-rating{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 footer{
     background-color: #353535;
     color: white;
@@ -193,8 +200,6 @@ h4{
     font-style: italic;
     font-size:18px;
     font-weight: 400;
-
-
 }
  .mentions i{
     padding-right: 10px;
@@ -204,25 +209,15 @@ h4{
         display: flex;
         justify-content: center;
     }
-    
     .btn{
-        
         display: block;
         width: 300px;
         height: 20px;
-
     }
-    
-    
     .restaurants-card{
-        
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
-
     }
-    
-    
     .card img{
         width: 100%;
         
@@ -240,37 +235,18 @@ h4{
     .mention-3{order:4 ;}
     .mention-4{order:3 ;}
     .mention-5{order: 2;}
-
 }
-    
 
 @media screen and (min-width: 1024px)
 {
-    .fonction{
-        padding-left: 180px;
-        padding-right: 180px;
-    }
-    .restaurant{
-        padding-left: 180px;
-        padding-right: 180px;
-       
-    }
-    
  nav{
-    
-    
     display: flex;
     justify-content: center;
-    
  } 
 ul{
     display: flex;
     flex-direction: row;
-    
-    gap:50px
-    
-    
-   
+    gap:20px
  }
  .btn{
     display: block;
@@ -278,27 +254,9 @@ ul{
     height: 25px;
  }
  
- .restaurants-card{
-    /* display: flex;
-    justify-content: center;
-    flex-wrap: wrap; */
-    
-    
-
-     justify-items:center;
-    display:grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr; 
-    row-gap: 30px;
-    
-   
- }
  .card{
-    min-width: 490px;
+    min-width: 450px;
     height: 251px;
-    
-    
-
  }
  .card img{
     width:100%
@@ -308,7 +266,7 @@ ul{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     padding-right: 20px;
     padding-top: 20px;
  }
@@ -316,16 +274,23 @@ ul{
 }
 
 @media screen and (min-width:1440px){
-    
-       
-    
-    
-}
+    .fonction{
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .restaurant{
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+.mentions{
+    gap: 50px;
+}}
       
+/**************xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*****************************/
+/*******************xxxxxxxxxxxxxxxxxxxxxx********************************/
 
+                                /* Menu*/
 
-
-     /* Menu*/
 .logo-return{
     position: absolute;
     left: 23px;
@@ -346,17 +311,25 @@ ul{
     top:-50px
 
 }
+.restaurant-name h1{
+    font-family: shrikhand;
+    font-weight: 400;
+    font-size: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .restaurant-name{
     display: flex;
-    justify-content: space-between;
-    padding-top: 32px;
-    
-padding-right: 20px;
-padding-left: 20px;
-font-family: shrikhand;
-font-weight: 400;
-font-size: 28px;
-line-height: 41px;
+    line-height: 41px;
+}
+
+.restaurant-name i{
+   position: absolute;
+   padding-left: 20px;
+  
+   
+   
+   
 }
 hr{
     border: 2px solid  #99e2d0 ;
@@ -419,12 +392,11 @@ line-height: 2px;
     margin-bottom: 30px;
     border-radius: 25px;
     background:linear-gradient(#FF79DA,#9356DC);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     color:#fff;
     font-family: roboto;
     font-size: 16px;
     font-weight: 500;
-
-
 }
 @media screen and (min-width:375px){
    .photo{
@@ -437,6 +409,10 @@ line-height: 2px;
         margin-right: 90px;
         padding-left: 90px;
         padding-right: 90px;
+    }
+    .restaurant-name{
+        display: flex;
+        justify-content: center;
     }
 }
 @media screen and (min-width:1440px){
