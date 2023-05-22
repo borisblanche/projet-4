@@ -1,3 +1,139 @@
+.loader{
+    position: fixed;
+    background:black;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disappear 10s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes disappear{
+    0%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+    30%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    70%{
+        opacity: 0%;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0%;
+    }
+}
+.loader p{
+    padding-top: 30%;
+    font-family: shrikhand;
+    font-weight:500;
+    font-size: 80px;
+    text-align: center;
+    color: #9356DC;
+    animation: color 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+@keyframes color{
+    0%{
+        color: white;
+    };
+    20%{
+        color: white;
+    };
+    25%{
+        color: #9356DC;}
+        50%{
+            color: #9356DC;
+        }
+    100%{
+        color: #9356DC;
+    }
+}
+.load-point{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.point{
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    margin: 30px;
+    border-radius: 50%;
+}
+.point-1{
+    background-color: #9356DC;
+    animation-direction: normal;
+    animation-iteration-count:normal;
+    animation: test1 5s;
+}
+.point-2{
+    background-color: #9356DC;
+    animation-direction:normal;
+    animation-iteration-count: normal;
+    animation: test2 5s;
+}
+.point-3{
+    background-color: #9356DC;
+    animation-direction: normal;
+    animation-iteration-count: normal;
+    animation: test3 5s;
+}
+@keyframes  test1 {
+    0%{
+        background-color: white;
+    }
+    5%{background-color: white;}
+    10%{
+        background-color: #9356DC;
+    }
+    100%{
+        background-color: #9356DC;
+    }
+}
+@keyframes test2 {
+    0% {
+        background-color: white
+    }
+20%{
+    background-color: white;
+}
+25% {
+        background-color: #9356DC;
+    }
+
+    100% {
+        background-color: #9356DC;
+    }
+}
+
+@keyframes test3 {
+    0% {
+        background-color: white
+    }
+
+    0% {
+        background-color: white
+    }
+30%{background-color:white}
+    35%{background-color: #9356DC;
+    }
+
+    100% {
+        background-color: #9356DC;
+    }
+}
+
 .btns:hover{
     cursor: pointer ;
     opacity: 80%;
