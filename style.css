@@ -1,11 +1,64 @@
+.load-point{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.point{
+    
+    height: 30px;
+    width: 30px;
+    margin: 30px;
+    border-radius: 50%;
+}
+.point-1{
+    background-color: black;
+    animation-direction: normal;
+    animation-iteration-count:normal;
+    
+    animation: test1 10s;
+    animation-delay: 1s;
+}
+.point-2{
+    background-color: black;
+    animation-direction:normal;
+    animation-iteration-count: normal;
+    
+    animation: test2 8s;
+    animation-delay: 2.5s;
+}
+.point-3{
+    background-color: black;
+    animation-direction: normal;
+    animation-iteration-count: normal;
+    
+    animation: test3 6s;
+    animation-delay: 4.5s;
+}
+@keyframes  test1 {
+to{background-color:#EAEAEA;
+};
+}
+@keyframes test2 {
+    to{background-color:#99e2d0;
+    };
+    }
+
+@keyframes test3 {
+    to{background-color: #9356DC;
+    };
+    
+}
 .loader{
     position: fixed;
     background:black;
     height: 100vh;
     inset: 0;
     z-index: 1;
-    opacity: 0.9;
-    animation: disappear 10s;
+    opacity: 1;
+transform-origin:  top ;
+    animation: disappear 5s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
     
 }
@@ -16,123 +69,37 @@
         opacity: 100%;
     }
     30%{
-        transform: scale(1);
-        opacity: 100%;
+        
     }
     50%{
-        opacity: 50%;
+       
     }
-    70%{
-        opacity: 0%;
+    60%{transform: scale(1);
+        opacity: 100%;
+        
     }
     100%{
         transform: scale(0);
-        opacity: 0%;
     }
 }
 .loader p{
-    padding-top: 30%;
+    padding-top: 100px;
     font-family: shrikhand;
     font-weight:500;
-    font-size: 80px;
+    font-size: 120px;
     text-align: center;
-    color: #9356DC;
+    color:black;
     animation: color 10s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
+    animation-delay: 5s;
+ 
 
 }
 @keyframes color{
-    0%{
-        color: white;
-    };
-    20%{
-        color: white;
-    };
-    25%{
-        color: #9356DC;}
-        50%{
-            color: #9356DC;
-        }
-    100%{
-        color: #9356DC;
-    }
+  from{color: black;}
+    to{color: #9356DC;}
 }
-.load-point{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     
-}
-.point{
-    background-color: #fff;
-    height: 30px;
-    width: 30px;
-    margin: 30px;
-    border-radius: 50%;
-}
-.point-1{
-    background-color: #9356DC;
-    animation-direction: normal;
-    animation-iteration-count:normal;
-    animation: test1 5s;
-}
-.point-2{
-    background-color: #9356DC;
-    animation-direction:normal;
-    animation-iteration-count: normal;
-    animation: test2 5s;
-}
-.point-3{
-    background-color: #9356DC;
-    animation-direction: normal;
-    animation-iteration-count: normal;
-    animation: test3 5s;
-}
-@keyframes  test1 {
-    0%{
-        background-color: white;
-    }
-    5%{background-color: white;}
-    10%{
-        background-color: #9356DC;
-    }
-    100%{
-        background-color: #9356DC;
-    }
-}
-@keyframes test2 {
-    0% {
-        background-color: white
-    }
-20%{
-    background-color: white;
-}
-25% {
-        background-color: #9356DC;
-    }
 
-    100% {
-        background-color: #9356DC;
-    }
-}
-
-@keyframes test3 {
-    0% {
-        background-color: white
-    }
-
-    0% {
-        background-color: white
-    }
-30%{background-color:white}
-    35%{background-color: #9356DC;
-    }
-
-    100% {
-        background-color: #9356DC;
-    }
-}
 
 .btns:hover{
     cursor: pointer ;
