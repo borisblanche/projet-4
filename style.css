@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 33%;
 
 }
 
@@ -17,9 +18,8 @@
     background-color: black;
     animation-direction: normal;
     animation-iteration-count: normal;
+    animation: test1 3s;
 
-    animation: test1 10s;
-    animation-delay: 0.5s;
 }
 
 .point-2 {
@@ -27,8 +27,8 @@
     animation-direction: normal;
     animation-iteration-count: normal;
 
-    animation: test2 8s;
-    animation-delay: 2.5s;
+    animation: test2 3s;
+    animation-delay: 1s;
 }
 
 .point-3 {
@@ -36,8 +36,8 @@
     animation-direction: normal;
     animation-iteration-count: normal;
 
-    animation: test3 6s;
-    animation-delay: 4.5s;
+    animation: test3 3s;
+    animation-delay: 2s;
 }
 
 @keyframes test1 {
@@ -72,48 +72,35 @@
     inset: 0;
     z-index: 1;
     opacity: 1;
-    transform-origin: bottom;
-    animation: disappear 5s;
-    animation-delay: 4s;
+    transform-origin: right;
+    animation: disappear 4s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 
 }
 
 @keyframes disappear {
     0% {
-        transform: scale(1);
         opacity: 100%;
-    }
-
-    30% {}
-
-    50% {}
-
-    60% {
-        transform: scale(1);
-        opacity: 100%;
-
     }
 
     100% {
-        transform: scale(0);
+        opacity: 0%;
     }
 }
 
-.loader p {
+/* .loader p {
     padding-top: 100px;
     font-family: shrikhand;
     font-weight: 500;
     font-size: 120px;
     text-align: center;
     color: black;
-    animation: color 10s;
-    animation-delay: 5s;
+    animation: color 1s;
+    animation-delay: 3s;
+} */
 
-
-}
-
-@keyframes color {
+/* @keyframes color {
     from {
         color: black;
     }
@@ -121,7 +108,7 @@
     to {
         color: #9356DC;
     }
-}
+} */
 
 
 
