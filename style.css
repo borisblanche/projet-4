@@ -19,7 +19,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    transition: all 3s;
+    transition: all 2s;
     opacity: 0%;
 }
 
@@ -385,10 +385,6 @@ h4 {
 .restaurant-name i {
     position: absolute;
     padding-left: 20px;
-
-
-
-
 }
 
 hr {
@@ -396,51 +392,90 @@ hr {
     width: 40px;
     margin-left: 20px;
     margin-top: -10px;
-
 }
 
 .btn-menu {
+    display: flex;
+    flex-direction: row;
     background-color: #fff;
     margin: 20px;
     padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
     border-radius: 15px;
 }
 
-.menu h2 {
 
+.menu h2 {
     margin-top: 30px;
     font-family: roboto;
     font-size: 16px;
     font-weight: 300;
-
 }
 
 .btn-menu h3 {
+    display: flex;
+    justify-content: flex-start;
     font-family: Roboto;
     font-weight: 800;
     font-size: 17px;
-    line-height: 10px;
-
+    line-height: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
+
+.btn-menu-content {
+    line-height: 0px;
+    width: 100%;
+}
+
+
+.checked {
+    border-radius: 0px 20px 20px 0px;
+    background-color: #99e2d0;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    width: 0px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btn-menu:hover .checked {
+    border-radius: 0px 20px 20px 0px;
+    background-color: #99e2d0;
+    color: #fff;
+    width: 15%;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    transition-duration: 1.5s;
+    
+}
+
 
 .btn-menu p {
     display: flex;
+    width: 100%;
+    flex-direction: row;
     justify-content: space-between;
     font-size: 14px;
     font-family: roboto;
     font-weight: 300;
-    line-height: 2px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+
+
+
 }
 
 .btn-menu span {
     font-family: Roboto;
     font-weight: 800;
     font-size: 19px;
-    line-height: 2px;
+    padding-right: 20px;
 
 
 }
@@ -448,6 +483,7 @@ hr {
 .commande {
     display: flex;
     justify-content: center;
+
 }
 
 .btn-commande {
@@ -500,11 +536,9 @@ hr {
     flex-direction: row;
     justify-content: center;
     padding-top: 33%;
-
 }
 
 .point {
-
     height: 30px;
     width: 30px;
     margin: 30px;
@@ -516,14 +550,12 @@ hr {
     animation-direction: normal;
     animation-iteration-count: normal;
     animation: test1 3s;
-
 }
 
 .point-2 {
     background-color: black;
     animation-direction: normal;
     animation-iteration-count: normal;
-
     animation: test2 3s;
     animation-delay: 0.5s;
 }
@@ -532,7 +564,6 @@ hr {
     background-color: black;
     animation-direction: normal;
     animation-iteration-count: normal;
-
     animation: test3 3s;
     animation-delay: 1s;
 }
@@ -570,7 +601,7 @@ hr {
     z-index: 1;
     inset: 1;
     opacity: 1;
-    transform-origin:center;
+    transform-origin: center;
     animation: disappear 2s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
@@ -579,7 +610,7 @@ hr {
 @keyframes disappear {
     0% {
         opacity: 100%;
-        scale:1;
+        scale: 1;
     }
 
     100% {
@@ -587,28 +618,35 @@ hr {
         scale: 0;
     }
 }
-#entrees{
-    transform:scale(1);
+
+#entrees {
+    transform: scale(1);
     animation: apparition 2s;
-    
-    
-}
-#plats{transform:scale(1);
-    animation: apparition 3s;
-    
+
 
 }
-#desserts{
-    transform:scale(1);
-    animation: apparition 4s;
-    
+
+#plats {
+    transform: scale(1);
+    animation: apparition 3s;
+
+
 }
+
+#desserts {
+    transform: scale(1);
+    animation: apparition 4s;
+
+}
+
 @keyframes apparition {
-    0%{
+    0% {
         transform: scale(0);
     }
-    100%{transform: scale(1);
-        
-        
+
+    100% {
+        transform: scale(1);
+
+
     }
 }
