@@ -1,10 +1,3 @@
-.btns:hover {
-    cursor: pointer;
-    opacity: 80%;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 30);
-
-}
-
 body {
     font-family: roboto;
     margin: 0%;
@@ -78,9 +71,8 @@ header {
 
 h1 {
     font-family: Roboto;
-    font-style: bold;
     font-size: 24px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 28px;
     text-align: center;
     margin-bottom: 0px;
@@ -88,7 +80,6 @@ h1 {
 
 .reserve p {
     font-family: Roboto;
-    Font-style: Light;
     Font-size: 18px;
     Line-height: 21px;
     text-align: center;
@@ -103,9 +94,15 @@ h1 {
     border-radius: 25px;
     color: #fff;
     font-size: 16px;
-    font-weight: 500px;
+    font-weight: 500;
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btns:hover {
+    cursor: pointer;
+    opacity: 80%;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 30);
 }
 
 .fonction {
@@ -116,7 +113,7 @@ h2 {
     padding-left: 20px;
     font-family: roboto;
     font-size: 24px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #353535;
 }
 
@@ -153,7 +150,7 @@ li {
     margin-bottom: 20px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     font-size: 16px;
-    font-weight: 500px;
+    font-weight: 500;
     color: black
 }
 
@@ -297,13 +294,16 @@ h4 {
         flex-direction: row;
         gap: 20px;
     }
-    li{
-    width: 100%;}
-    .btn{
+
+    li {
+        width: 100%;
+    }
+
+    .btn {
         display: flex;
         width: 100%;
-        
-        
+
+
     }
 
 
@@ -410,7 +410,7 @@ hr {
     margin: 20px;
     padding-left: 15px;
     border-radius: 15px;
-    
+
 }
 
 
@@ -428,13 +428,13 @@ hr {
     font-weight: 800;
     font-size: 17px;
     line-height: normal
-    
 }
 
 .btn-menu-content {
     width: 100%;
-    
+
 }
+
 .btn-menu p {
     line-height: normal;
     display: flex;
@@ -444,12 +444,12 @@ hr {
     font-size: 14px;
     font-family: roboto;
     font-weight: 300;
-    
-    
-    
+
+
+
 }
 
-.btn-menu span{
+.btn-menu span {
     font-family: Roboto;
     font-weight: 800;
     font-size: 19px;
@@ -485,23 +485,25 @@ hr {
     align-content: center;
     transition-duration: 1.5s;
     overflow: visible;
-    
+
 }
-.btn-menu:hover h3{
+
+.btn-menu:hover h3 {
     width: 200px;
     display: block;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow:ellipsis;
-    
+    text-overflow: ellipsis;
+
 }
-.btn-menu:hover p{
+
+.btn-menu:hover p {
     width: 200px;
     display: block;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow:ellipsis;
-    
+    text-overflow: ellipsis;
+
 }
 
 .commande {
@@ -529,7 +531,7 @@ hr {
     .photo {
         width: 100%;
     }
-    
+
 }
 
 @media screen and (min-width:768px) {
@@ -544,43 +546,47 @@ hr {
         display: flex;
         justify-content: center;
     }
-    .btn-menu:hover h3{
+
+    .btn-menu:hover h3 {
         width: 240px;
         display: block;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow:ellipsis;
-        
+        text-overflow: ellipsis;
+
     }
-    .btn-menu:hover p{
+
+    .btn-menu:hover p {
         width: 240px;
         display: block;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow:'...';
-            
+        text-overflow: ellipsis;
+
     }
 }
-@media screen and (min-width: 1024px){
-    .btn-menu:hover h3{
+
+@media screen and (min-width: 1024px) {
+    .btn-menu:hover h3 {
         width: 400px;
         display: block;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow:ellipsis;
-        
+        text-overflow: ellipsis;
+
     }
-    .btn-menu:hover p{
+
+    .btn-menu:hover p {
         width: 400px;
         display: block;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow:'...';
-            
+        text-overflow: ellipsis;
+
     }
 
 }
-    
+
 
 
 @media screen and (min-width:1440px) {
@@ -609,14 +615,14 @@ hr {
 .point-1 {
     background-color: black;
     animation-direction: normal;
-    animation-iteration-count: normal;
+    animation-iteration-count: infinite;
     animation: test1 3s;
 }
 
 .point-2 {
     background-color: black;
     animation-direction: normal;
-    animation-iteration-count: normal;
+    animation-iteration-count: infinite;
     animation: test2 3s;
     animation-delay: 0.5s;
 }
@@ -624,7 +630,7 @@ hr {
 .point-3 {
     background-color: black;
     animation-direction: normal;
-    animation-iteration-count: normal;
+    animation-iteration-count: infinite;
     animation: test3 3s;
     animation-delay: 1s;
 }
@@ -633,25 +639,18 @@ hr {
     to {
         background-color: #EAEAEA;
     }
-
-    ;
 }
 
 @keyframes test2 {
     to {
         background-color: #99e2d0;
     }
-
-    ;
 }
 
 @keyframes test3 {
     to {
         background-color: #9356DC;
     }
-
-    ;
-
 }
 
 .loader {
@@ -660,7 +659,6 @@ hr {
     height: 100%;
     width: 100%;
     z-index: 1;
-    inset: 1;
     opacity: 1;
     transform-origin: center;
     animation: disappear 2s;
@@ -683,21 +681,16 @@ hr {
 #entrees {
     transform: scale(1);
     animation: apparition 2s;
-
-
 }
 
 #plats {
     transform: scale(1);
     animation: apparition 3s;
-
-
 }
 
 #desserts {
     transform: scale(1);
     animation: apparition 4s;
-
 }
 
 @keyframes apparition {
@@ -707,7 +700,5 @@ hr {
 
     100% {
         transform: scale(1);
-
-
     }
 }
