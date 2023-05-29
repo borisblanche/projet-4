@@ -410,6 +410,7 @@ hr {
     margin: 20px;
     padding-left: 15px;
     border-radius: 15px;
+    
 }
 
 
@@ -426,16 +427,38 @@ hr {
     font-family: Roboto;
     font-weight: 800;
     font-size: 17px;
-    line-height: 0px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    line-height: normal
+    
 }
 
 .btn-menu-content {
-    line-height: 0px;
     width: 100%;
+    
+}
+.btn-menu p {
+    line-height: normal;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: roboto;
+    font-weight: 300;
+    
+    
+    
 }
 
+.btn-menu span{
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 19px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
+}
 
 .checked {
     border-radius: 0px 20px 20px 0px;
@@ -454,45 +477,36 @@ hr {
     border-radius: 0px 20px 20px 0px;
     background-color: #99e2d0;
     color: #fff;
-    width: 15%;
+    width: 80px;
     font-size: 28px;
     font-weight: 700;
     display: flex;
     justify-self: center;
     align-content: center;
     transition-duration: 1.5s;
+    overflow: visible;
     
 }
-
-
-.btn-menu p {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 14px;
-    font-family: roboto;
-    font-weight: 300;
-    padding-bottom: 10px;
-    padding-top: 5px;
-
-
-
+.btn-menu:hover h3{
+    width: 200px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    
 }
-
-.btn-menu span {
-    font-family: Roboto;
-    font-weight: 800;
-    font-size: 19px;
-    padding-right: 20px;
-
-
+.btn-menu:hover p{
+    width: 200px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    
 }
 
 .commande {
     display: flex;
     justify-content: center;
-
 }
 
 .btn-commande {
@@ -515,6 +529,7 @@ hr {
     .photo {
         width: 100%;
     }
+    
 }
 
 @media screen and (min-width:768px) {
@@ -529,7 +544,44 @@ hr {
         display: flex;
         justify-content: center;
     }
+    .btn-menu:hover h3{
+        width: 240px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        
+    }
+    .btn-menu:hover p{
+        width: 240px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:'...';
+            
+    }
 }
+@media screen and (min-width: 1024px){
+    .btn-menu:hover h3{
+        width: 400px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        
+    }
+    .btn-menu:hover p{
+        width: 400px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:'...';
+            
+    }
+
+}
+    
+
 
 @media screen and (min-width:1440px) {
     #menu {
