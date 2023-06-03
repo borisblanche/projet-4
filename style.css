@@ -102,7 +102,7 @@ h1 {
 .btns:hover {
     cursor: pointer;
     opacity: 80%;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 30);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .fonction {
@@ -669,12 +669,10 @@ hr {
 @keyframes disappear {
     0% {
         opacity: 100%;
-        scale: 1;
     }
 
     100% {
         opacity: 0%;
-        scale: 0;
     }
 }
 
